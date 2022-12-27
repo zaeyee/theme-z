@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  srcDir: './src',
+  srcDir: 'src',
   title: 'Zaeyee',
   description: 'Zaeyee space',
   lastUpdated: true,
