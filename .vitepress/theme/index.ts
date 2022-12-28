@@ -19,3 +19,5 @@ export default {
     // setup hook. all composition APIs are available here.
   }
 }
+
+export type { Theme } from './types'

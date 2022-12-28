@@ -1,6 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const { theme } = useData()
+
+console.log(theme)
+</script>
 
 <template>
-  <div m1>aaa</div>
+  <TheNavbar />
   <Content />
 </template>

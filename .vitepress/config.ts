@@ -1,13 +1,25 @@
-import { defineConfig } from 'vitepress'
+import { defineConfigWithTheme } from 'vitepress'
+import { Theme } from './theme/types'
 
-export default defineConfig({
-  srcDir: 'src',
+export default defineConfigWithTheme<Theme.Config>({
   title: 'Zaeyee',
   description: 'Zaeyee space',
   lastUpdated: true,
   themeConfig: {
-    logo: '/public/logo.png',
-    siteTitle: false,
+    // logo: '/public/logo.svg',
+    // logo: {
+    //   src: '/public/logo.svg',
+    //   alt: 'logo'
+    // },
+    logo: {
+      light: '/public/logo.svg',
+      dark: '/public/logo-dark.svg',
+      alt: ''
+    },
+    // logo: {
+    //   light: { src: '/public/logo.svg' },
+    //   dark: { src: '/public/logo-dark.svg' }
+    // },
     nav: [
       { text: 'Blog', link: '/posts' },
       { text: 'Projects', link: '/projects' },
