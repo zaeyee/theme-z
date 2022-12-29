@@ -1,4 +1,6 @@
+import '@unocss/reset/tailwind.css'
 import 'uno.css'
+import './style.scss'
 
 // import DefaultTheme from 'vitepress/theme'
 import Layout from './layouts/Layout.vue'
@@ -19,5 +21,3 @@ export default {
     // setup hook. all composition APIs are available here.
   }
 }
-
-export type { Theme } from './types'

@@ -187,20 +187,20 @@ export namespace Theme {
   // social link ---------------------------------------------------------------
 
   export interface SocialLink {
-    icon: SocialLinkIcon
+    icon: string
     link: string
   }
 
-  export type SocialLinkIcon =
-    | 'discord'
-    | 'facebook'
-    | 'github'
-    | 'instagram'
-    | 'linkedin'
-    | 'slack'
-    | 'twitter'
-    | 'youtube'
-    | { svg: string }
+  // export type SocialLinkIcon =
+  //   | 'discord'
+  //   | 'facebook'
+  //   | 'github'
+  //   | 'instagram'
+  //   | 'linkedin'
+  //   | 'slack'
+  //   | 'twitter'
+  //   | 'youtube'
+  //   | { svg: string }
 
   // footer --------------------------------------------------------------------
 

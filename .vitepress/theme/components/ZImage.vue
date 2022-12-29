@@ -5,7 +5,7 @@ export default {
 </script>
 
 <script setup lang="ts">
-import type { Theme } from '../'
+import type { Theme } from '../types'
 import { withBase } from 'vitepress'
 
 const props = defineProps<{
@@ -31,7 +31,7 @@ const imageArr = computed(() => {
   <img
     v-for="(item, index) in imageArr"
     :key="item.src"
-    class="VPImage"
+    class="z-image"
     :class="imageArr.length === 2 && (index === 1 ? 'dark' : 'light')"
     :src="withBase(item.src)"
     :alt="item.alt"
@@ -39,10 +39,10 @@ const imageArr = computed(() => {
 </template>
 
 <style scoped>
-html:not(.dark) .VPImage.dark {
+html:not(.dark) .z-image.dark {
   display: none;
 }
-.dark .VPImage.light {
+.dark .z-image.light {
   display: none;
 }
 </style>

@@ -1,5 +1,5 @@
 import { defineConfigWithTheme } from 'vitepress'
-import { Theme } from './theme/types'
+import type { Theme } from './theme/types'
 
 export default defineConfigWithTheme<Theme.Config>({
   title: 'Zaeyee',
@@ -29,8 +29,18 @@ export default defineConfigWithTheme<Theme.Config>({
       { text: 'Demos', link: '/demos' }
     ],
     socialLinks: [
-      { icon: 'twitter', link: 'https://twitter.com/zaeyee' },
-      { icon: 'github', link: 'https://github.com/zaeyee' }
+      {
+        icon: 'i-lucide:heart',
+        link: 'https://antfu.me/sponsors-list'
+      },
+      {
+        icon: 'i-lucide:twitter',
+        link: 'https://twitter.com/antfu7'
+      },
+      {
+        icon: 'i-lucide:github',
+        link: 'https://github.com/antfu'
+      }
     ],
     sidebar: []
   }

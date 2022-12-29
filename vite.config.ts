@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [
     AutoImport({
       dts: true,
-      imports: ['vue', 'vitepress']
+      imports: ['vue', 'vitepress', '@vueuse/core']
     }),
     Components({
       dirs: ['.vitepress/theme/components'],
