@@ -8,10 +8,7 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     Content: typeof import('vitepress')['Content']
-    ZeImage: typeof import('./.vitepress/theme/components/ZeImage.vue')['default']
-    ZeNavbar: typeof import('./.vitepress/theme/components/ZeNavbar.vue')['default']
-    ZImage: typeof import('./.vitepress/theme/components/ZImage.vue')['default']
-    ZNavbar: typeof import('./.vitepress/theme/components/ZNavbar.vue')['default']
-    ZzImage: typeof import('./.vitepress/theme/components/ZzImage.vue')['default']
+    ZImage: typeof import('./src/components/ZImage.vue')['default']
+    ZNavbar: typeof import('./src/components/ZNavbar.vue')['default']
   }
 }

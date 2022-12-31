@@ -7,5 +7,5 @@
     "resolveJsonModule": true,
     "strict": true
   },
-  "include": ["src/**/*", ".vitepress/**/*", "auto-imports.d.ts", "components.d.ts"]
+  "include": ["src/**/*", "demo/.vitepress/**/*", "auto-imports.d.ts", "components.d.ts"]
 }

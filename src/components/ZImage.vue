@@ -5,15 +5,15 @@ export default {
 </script>
 
 <script setup lang="ts">
-import type { Theme } from '../types'
+import type { ThemeableImage, Image } from '../types'
 import { withBase } from 'vitepress'
 
 const props = defineProps<{
-  image: Theme.ThemeableImage
+  image: ThemeableImage
   alt?: string
 }>()
 
-const getImageObj = (image: Theme.Image) => {
+const getImageObj = (image: Image) => {
   return typeof image !== 'string' ? image : { src: image }
 }
 

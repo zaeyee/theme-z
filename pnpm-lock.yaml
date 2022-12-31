@@ -2,13 +2,13 @@ lockfileVersion: 5.4
 
 specifiers:
   '@iconify-json/lucide': ^1.1.55
+  '@types/node': ^18.11.18
   '@unocss/reset': ^0.48.0
   '@vueuse/core': ^9.9.0
   sass: ^1.57.1
   unocss: ^0.48.0
   unplugin-auto-import: ^0.12.1
   unplugin-vue-components: ^0.22.12
-  vite: ^4.0.3
   vitepress: 1.0.0-alpha.33
   vue: ^3.2.45
 
@@ -18,12 +18,12 @@ dependencies:
 
 devDependencies:
   '@iconify-json/lucide': 1.1.55
+  '@types/node': 18.11.18
   sass: 1.57.1
-  unocss: 0.48.0_vite@4.0.3
+  unocss: 0.48.0
   unplugin-auto-import: 0.12.1_@vueuse+core@9.9.0
   unplugin-vue-components: 0.22.12_vue@3.2.45
-  vite: 4.0.3_sass@1.57.1
-  vitepress: 1.0.0-alpha.33_sass@1.57.1
+  vitepress: 1.0.0-alpha.33_ovmyjmuuyckt3r3gpaexj2onji
   vue: 3.2.45
 
 packages:
@@ -518,15 +518,19 @@ packages:
     resolution: {integrity: sha512-WulqXMDUTYAXCjZnk6JtIHPigp55cVtDgDrO2gHRwhyJto21+1zbVCtOYB2L1F9w4qCQ0rOGWBnBe0FNTiEJIQ==}
     dev: true
 
+  /@types/node/18.11.18:
+    resolution: {integrity: sha512-DHQpWGjyQKSHj3ebjFI/wRKcqQcdR+MoFBygntYOZytCqNfkd2ZC4ARDJ2DQqhjH5p85Nnd3jhUJIXrszFX/JA==}
+    dev: true
+
   /@types/web-bluetooth/0.0.16:
     resolution: {integrity: sha512-oh8q2Zc32S6gd/j50GowEjKLoOVOwHP/bWVjKJInBwQqdOYMdPrf1oVlelTlyfFK3CKxL1uahMDAr+vy8T7yMQ==}
 
-  /@unocss/astro/0.48.0_vite@4.0.3:
+  /@unocss/astro/0.48.0:
     resolution: {integrity: sha512-MoINkgukO6YxVVEmEsY0oLWqU+Fv/dzPtUQhfsfek1mqtUbnwQ3n1xuOJ2S0eJSYmbprSuhvW/yTFVn1twsM1A==}
     dependencies:
       '@unocss/core': 0.48.0
       '@unocss/reset': 0.48.0
-      '@unocss/vite': 0.48.0_vite@4.0.3
+      '@unocss/vite': 0.48.0
     transitivePeerDependencies:
       - rollup
       - vite
@@ -661,7 +665,7 @@ packages:
       '@unocss/core': 0.48.0
     dev: true
 
-  /@unocss/vite/0.48.0_vite@4.0.3:
+  /@unocss/vite/0.48.0:
     resolution: {integrity: sha512-j4QS2Ns02J9LRwdpLNiKt+Fo0+YUtvTQ66Xc/xq9s/ErptUwNnXsTCEDQzadXwPw+I8REKakLUve32to8VAd0w==}
     peerDependencies:
       vite: ^2.9.0 || ^3.0.0-0 || ^4.0.0
@@ -676,7 +680,6 @@ packages:
       chokidar: 3.5.3
       fast-glob: 3.2.12
       magic-string: 0.27.0
-      vite: 4.0.3_sass@1.57.1
     transitivePeerDependencies:
       - rollup
     dev: true
@@ -688,7 +691,7 @@ packages:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.0.3_sass@1.57.1
+      vite: 4.0.3_ovmyjmuuyckt3r3gpaexj2onji
       vue: 3.2.45
     dev: true
 
@@ -1465,7 +1468,7 @@ packages:
       - rollup
     dev: true
 
-  /unocss/0.48.0_vite@4.0.3:
+  /unocss/0.48.0:
     resolution: {integrity: sha512-rDyMHyvRTRUPOd406CzgoYfiQ4tzN/TGU++jFTDzLsJ9Unuwf/pBBclP6z6aqt5eRBoEOEMqrJJwm9QN7aeYdA==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -1474,7 +1477,7 @@ packages:
       '@unocss/webpack':
         optional: true
     dependencies:
-      '@unocss/astro': 0.48.0_vite@4.0.3
+      '@unocss/astro': 0.48.0
       '@unocss/cli': 0.48.0
       '@unocss/core': 0.48.0
       '@unocss/preset-attributify': 0.48.0
@@ -1490,7 +1493,7 @@ packages:
       '@unocss/transformer-compile-class': 0.48.0
       '@unocss/transformer-directives': 0.48.0
       '@unocss/transformer-variant-group': 0.48.0
-      '@unocss/vite': 0.48.0_vite@4.0.3
+      '@unocss/vite': 0.48.0
     transitivePeerDependencies:
       - rollup
       - supports-color
@@ -1552,7 +1555,7 @@ packages:
       webpack-virtual-modules: 0.5.0
     dev: true
 
-  /vite/4.0.3_sass@1.57.1:
+  /vite/4.0.3_ovmyjmuuyckt3r3gpaexj2onji:
     resolution: {integrity: sha512-HvuNv1RdE7deIfQb8mPk51UKjqptO/4RXZ5yXSAvurd5xOckwS/gg8h9Tky3uSbnjYTgUm0hVCet1cyhKd73ZA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -1577,6 +1580,7 @@ packages:
       terser:
         optional: true
     dependencies:
+      '@types/node': 18.11.18
       esbuild: 0.16.10
       postcss: 8.4.20
       resolve: 1.22.1
@@ -1586,7 +1590,7 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitepress/1.0.0-alpha.33_sass@1.57.1:
+  /vitepress/1.0.0-alpha.33_ovmyjmuuyckt3r3gpaexj2onji:
     resolution: {integrity: sha512-EhMDqWLllYr5mXqAz4GCQ1o/bu5umQ6C2d8voiSaTHMkYCxsGc31ETykflM6NOhGx6yccwXygrYIIeN1l6BUEA==}
     hasBin: true
     dependencies:
@@ -1597,7 +1601,7 @@ packages:
       '@vueuse/core': 9.9.0_vue@3.2.45
       body-scroll-lock: 4.0.0-beta.0
       shiki: 0.12.1
-      vite: 4.0.3_sass@1.57.1
+      vite: 4.0.3_ovmyjmuuyckt3r3gpaexj2onji
       vue: 3.2.45
     transitivePeerDependencies:
       - '@algolia/client-search'

@@ -21,3 +21,5 @@ export default {
     // setup hook. all composition APIs are available here.
   }
 }
+
+export type { Config } from './types/config'

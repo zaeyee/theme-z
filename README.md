@@ -1,3 +1,3 @@
-# ZAEYEE
+# VitePres Theme Z
 
-My personal website powered by [vitepress](https://vitepress.vuejs.org/).
+A [VitePress](https://vitepress.vuejs.org/) blog theme.

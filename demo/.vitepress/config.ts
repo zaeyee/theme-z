@@ -1,7 +1,9 @@
 import { defineConfigWithTheme } from 'vitepress'
-import type { Theme } from './theme/types'
+import type { Config } from '../../src/types'
+import zConfig from '../../src/config'
 
-export default defineConfigWithTheme<Theme.Config>({
+export default defineConfigWithTheme<Config>({
+  extends: zConfig,
   title: 'Zaeyee',
   description: 'Zaeyee space',
   lastUpdated: true,
