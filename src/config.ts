@@ -7,7 +7,10 @@ export default () => ({
     plugins: [
       AutoImport({
         dts: '../auto-imports.d.ts',
-        imports: ['vue', 'vitepress', '@vueuse/core']
+        imports: ['vue', 'vitepress', '@vueuse/core'],
+        eslintrc: {
+          enabled: true
+        }
       }),
       Components({
         dirs: ['../src/components'],

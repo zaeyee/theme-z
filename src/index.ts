@@ -1,3 +1,4 @@
+import type { Theme } from 'vitepress'
 import '@unocss/reset/tailwind.css'
 import 'uno.css'
 import './style.scss'
@@ -20,6 +21,6 @@ export default {
     // this function will be executed inside VitePressApp's
     // setup hook. all composition APIs are available here.
   }
-}
+} as Theme
 
 export type { Config } from './types/config'

@@ -1,11 +1,12 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "module": "NodeNext",
+    "module": "ESNext",
     "moduleResolution": "Node",
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "strict": true
   },
-  "include": ["src/**/*", "demo/.vitepress/**/*", "auto-imports.d.ts", "components.d.ts"]
+  "include": ["src/**/*", "demo/.vitepress/**/*", "auto-imports.d.ts", "components.d.ts"],
+  "exclude": ["demo/.vitepress/cache"]
 }

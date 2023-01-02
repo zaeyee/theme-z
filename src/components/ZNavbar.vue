@@ -11,10 +11,24 @@ const toggleDark = useToggle(isDark)
       <ZImage :image="theme.logo" />
     </a>
     <nav flex="~" justify-center items-center>
-      <a px-2.5 color="black/50 hover:black/70" transition-colors v-for="item in theme.nav" :href="item.link">
+      <a
+        v-for="(item, index) in theme.nav"
+        :key="index"
+        px-2.5
+        color="black/50 hover:black/70"
+        transition-colors
+        :href="item.link"
+      >
         {{ item.text }}
       </a>
-      <a v-for="item in theme.socialLinks" :href="item.link" color="black/50 hover:black" px-2.5 transition-colors>
+      <a
+        v-for="(item, index) in theme.socialLinks"
+        :key="index"
+        :href="item.link"
+        color="black/50 hover:black"
+        px-2.5
+        transition-colors
+      >
         <div text-lg :class="item.icon"></div>
       </a>
       <div b-l px-2.5 text-lg cursor-pointer transition-colors color="black/50 hover:black" @click="toggleDark()">
