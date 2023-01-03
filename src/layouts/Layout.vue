@@ -4,8 +4,10 @@ const { page } = useData()
 
 <template>
   <ZNavbar />
-  <main prose prose-stone py-10 m-auto>
-    <h1>{{ page.title }}</h1>
-    <Content />
+  <main class="font-mono px-7 py-10">
+    <article class="prose prose-stone m-auto max-w-80ch">
+      <h1>{{ page.title }}</h1>
+      <Content />
+    </article>
   </main>
 </template>

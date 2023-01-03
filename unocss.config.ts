@@ -27,11 +27,11 @@ export default defineConfig({
         },
         a: {
           'text-decoration': 'none',
-          'border-bottom': '1px solid rgba(125,125,125,.3)',
-          transition: 'border .3s ease-in-out'
+          'border-bottom': '1px solid var(--un-prose-borders)',
+          transition: 'all .3s ease-in-out'
         },
         'a:hover': {
-          'border-bottom': '1px solid #000'
+          'border-bottom-color': 'var(--un-prose-links)'
         },
         hr: {
           width: '50px',
