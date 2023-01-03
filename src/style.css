@@ -1,0 +1,7 @@
+html {
+  @apply font-mono;
+}
+
+html.dark {
+  @apply bg-black;
+}

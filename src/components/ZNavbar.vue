@@ -1,6 +1,5 @@
 <script setup lang="ts">
 const { theme } = useData()
-
 const isDark = useDark()
 const toggleDark = useToggle(isDark)
 </script>
@@ -25,6 +24,7 @@ const toggleDark = useToggle(isDark)
         v-for="(item, index) in theme.socialLinks"
         :key="index"
         :href="item.link"
+        :class="{ 'b-l': index === 0 }"
         color="black/50 hover:black"
         px-2.5
         transition-colors

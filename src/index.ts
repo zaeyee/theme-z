@@ -1,6 +1,7 @@
 import type { Theme } from 'vitepress'
 import '@unocss/reset/tailwind.css'
 import 'uno.css'
+import './style.css'
 
 // import DefaultTheme from 'vitepress/theme'
 import Layout from './layouts/Layout.vue'
