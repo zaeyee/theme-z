@@ -2,15 +2,10 @@ lockfileVersion: 5.4
 
 specifiers:
   '@iconify-json/lucide': ^1.1.55
-  '@typescript-eslint/eslint-plugin': ^5.47.1
-  '@typescript-eslint/parser': ^5.47.1
   '@unocss/reset': ^0.48.0
   '@vueuse/core': ^9.9.0
-  '@zaeyee/eslint-config': 0.2.0-beta.4
+  '@zaeyee/eslint-config': 0.2.0-beta.7
   eslint: ^8.31.0
-  eslint-config-prettier: ^8.5.0
-  eslint-plugin-prettier: ^4.2.1
-  eslint-plugin-vue: ^9.8.0
   prettier: ^2.8.1
   typescript: ^4.9.4
   unocss: ^0.48.0
@@ -25,13 +20,8 @@ dependencies:
 
 devDependencies:
   '@iconify-json/lucide': 1.1.55
-  '@typescript-eslint/eslint-plugin': 5.47.1_axni7f4fgvh6tlufnh6hwgsifq
-  '@typescript-eslint/parser': 5.47.1_iukboom6ndih5an6iafl45j2fe
-  '@zaeyee/eslint-config': 0.2.0-beta.4_pizzqsi6myk3636ihwmmh4mlr4
+  '@zaeyee/eslint-config': 0.2.0-beta.7_pizzqsi6myk3636ihwmmh4mlr4
   eslint: 8.31.0
-  eslint-config-prettier: 8.5.0_eslint@8.31.0
-  eslint-plugin-prettier: 4.2.1_xtjuwoibeoaqavcvkna3ocxxbu
-  eslint-plugin-vue: 9.8.0_eslint@8.31.0
   prettier: 2.8.1
   typescript: 4.9.4
   unocss: 0.48.0
@@ -984,8 +974,8 @@ packages:
       - '@vue/composition-api'
       - vue
 
-  /@zaeyee/eslint-config-base/0.2.0-beta.4_crnjwcwerrbat3mlbmrsoa543e:
-    resolution: {integrity: sha512-KSQlL+DCrceyDCsA44ca169VTewIjzzkBgB2bdDL8VkBeYSRX4WGTeoBYD3ULSrPABTbOqz7uANq4Qs4o+Edng==}
+  /@zaeyee/eslint-config-base/0.2.0-beta.7_crnjwcwerrbat3mlbmrsoa543e:
+    resolution: {integrity: sha512-odCWfZT19Iskh4sjkqB0GTnzj0fNWfoxG6KtH06csDvyYa5woCJTuTUMFtNM14/1O5KJ8G8Dp0YJtrivT2pNvA==}
     peerDependencies:
       eslint: '>=7.4.0'
       prettier: '>=2.8.0'
@@ -996,39 +986,37 @@ packages:
       prettier: 2.8.1
     dev: true
 
-  /@zaeyee/eslint-config-ts/0.2.0-beta.4_pizzqsi6myk3636ihwmmh4mlr4:
-    resolution: {integrity: sha512-ecvr9gzh5G4gA6JPPVcux4mSMp/5AKwKTsZgDl5YjWMKPHQyMPTtlDs2VniazlaOe96NGKRKWQiYLvAxjeN35w==}
+  /@zaeyee/eslint-config-ts/0.2.0-beta.7_pizzqsi6myk3636ihwmmh4mlr4:
+    resolution: {integrity: sha512-1FaBhzEweN+PwL1upmmz2FZDnmZUfjAP6ovdlLyThXGXGvb9+RHWLz8o954Ju2NKMlreq6cLJTvGTJZk192b5A==}
     peerDependencies:
       eslint: '>=7.4.0'
-      prettier: '>=2.8.0'
       typescript: '>=3.9'
     dependencies:
       '@typescript-eslint/eslint-plugin': 5.47.1_axni7f4fgvh6tlufnh6hwgsifq
       '@typescript-eslint/parser': 5.47.1_iukboom6ndih5an6iafl45j2fe
-      '@zaeyee/eslint-config-base': 0.2.0-beta.4_crnjwcwerrbat3mlbmrsoa543e
+      '@zaeyee/eslint-config-base': 0.2.0-beta.7_crnjwcwerrbat3mlbmrsoa543e
       eslint: 8.31.0
-      prettier: 2.8.1
       typescript: 4.9.4
     transitivePeerDependencies:
+      - prettier
       - supports-color
     dev: true
 
-  /@zaeyee/eslint-config-vue/0.2.0-beta.4_crnjwcwerrbat3mlbmrsoa543e:
-    resolution: {integrity: sha512-L2eGp5i0WU/ip9RFcIvTw2j3yI/fonXeHd2Xvl1Ztu5aofOSGxKKF0BPEVyv5akfYtJJQtEiLUG/4T3ym2FXow==}
+  /@zaeyee/eslint-config-vue/0.2.0-beta.7_crnjwcwerrbat3mlbmrsoa543e:
+    resolution: {integrity: sha512-5PPGajzg5goJ4qIoX7lHgUM3TIm565nawbFKBvydj4+vNosI1q42l5188i51ZKfeQUCEU6PF+vSuv8IgCnBKVg==}
     peerDependencies:
       eslint: '>=7.4.0'
-      prettier: '>=2.8.0'
     dependencies:
-      '@zaeyee/eslint-config-base': 0.2.0-beta.4_crnjwcwerrbat3mlbmrsoa543e
+      '@zaeyee/eslint-config-base': 0.2.0-beta.7_crnjwcwerrbat3mlbmrsoa543e
       eslint: 8.31.0
       eslint-plugin-vue: 9.8.0_eslint@8.31.0
-      prettier: 2.8.1
     transitivePeerDependencies:
+      - prettier
       - supports-color
     dev: true
 
-  /@zaeyee/eslint-config/0.2.0-beta.4_pizzqsi6myk3636ihwmmh4mlr4:
-    resolution: {integrity: sha512-Np/2MDvxo/hE1rsEmSML6H/X1C8Lkcy0BsSim9rrsojC4lHup0sE9ndWc1SwHDzppfXv2iuSJpYIkHv5QRbP4Q==}
+  /@zaeyee/eslint-config/0.2.0-beta.7_pizzqsi6myk3636ihwmmh4mlr4:
+    resolution: {integrity: sha512-FoXwJKrmV3HTRLuZ6kNT8NuLJ/DdC+Kr+YNCAKm9yUZ2rkWPQJ/zU2w4h5qwgeYP0AE2dVJWXsnPR3gnDiVTwQ==}
     peerDependencies:
       eslint: '>=7.4.0'
       prettier: '>=2.8.0'
@@ -1036,8 +1024,8 @@ packages:
     dependencies:
       '@typescript-eslint/eslint-plugin': 5.47.1_axni7f4fgvh6tlufnh6hwgsifq
       '@typescript-eslint/parser': 5.47.1_iukboom6ndih5an6iafl45j2fe
-      '@zaeyee/eslint-config-ts': 0.2.0-beta.4_pizzqsi6myk3636ihwmmh4mlr4
-      '@zaeyee/eslint-config-vue': 0.2.0-beta.4_crnjwcwerrbat3mlbmrsoa543e
+      '@zaeyee/eslint-config-ts': 0.2.0-beta.7_pizzqsi6myk3636ihwmmh4mlr4
+      '@zaeyee/eslint-config-vue': 0.2.0-beta.7_crnjwcwerrbat3mlbmrsoa543e
       eslint: 8.31.0
       eslint-plugin-vue: 9.8.0_eslint@8.31.0
       prettier: 2.8.1
