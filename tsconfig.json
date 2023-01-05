@@ -5,6 +5,7 @@
     "moduleResolution": "Node",
     "esModuleInterop": true,
     "resolveJsonModule": true,
+    "isolatedModules": true,
     "strict": true
   },
   "include": ["src/**/*", "demo/.vitepress/**/*", "auto-imports.d.ts", "components.d.ts"],
