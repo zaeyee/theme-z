@@ -8,7 +8,12 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     Content: typeof import('vitepress')['Content']
+    ZApp: typeof import('./src/components/ZApp.vue')['default']
+    ZContent: typeof import('./src/components/ZContent.vue')['default']
+    ZContentPost: typeof import('./src/components/ZContentPost.vue')['default']
+    ZContentProjects: typeof import('./src/components/ZContentProjects.vue')['default']
     ZImage: typeof import('./src/components/ZImage.vue')['default']
     ZNavbar: typeof import('./src/components/ZNavbar.vue')['default']
+    ZNotFound: typeof import('./src/components/ZNotFound.vue')['default']
   }
 }

@@ -1,7 +1,33 @@
-html {
+html.dark {
+  @apply bg-black;
+}
+
+body {
   @apply font-mono;
 }
 
-html.dark {
-  @apply bg-black;
+.prose,
+[prose=''] {
+  --un-prose-body: #44403c;
+  --un-prose-headings: #1c1917;
+  --un-prose-links: #1c1917;
+  --un-prose-lists: #a8a29e;
+  --un-prose-hr: #e7e5e4;
+  --un-prose-captions: #78716c;
+  --un-prose-code: #1c1917;
+  --un-prose-borders: #e7e5e4;
+  --un-prose-bg-soft: #f5f5f4;
+  --un-prose-invert-body: #e7e5e4;
+  --un-prose-invert-headings: #f5f5f4;
+  --un-prose-invert-links: #f5f5f4;
+  --un-prose-invert-lists: #78716c;
+  --un-prose-invert-hr: #44403c;
+  --un-prose-invert-captions: #a8a29e;
+  --un-prose-invert-code: #f5f5f4;
+  --un-prose-invert-borders: #44403c;
+  --un-prose-invert-bg-soft: #292524;
+  --un-prose-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+    monospace;
+
+  @apply max-w-80ch ma;
 }

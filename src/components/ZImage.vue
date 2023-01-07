@@ -1,9 +1,3 @@
-<script lang="ts">
-export default {
-  inheritAttrs: false
-}
-</script>
-
 <script setup lang="ts">
 import type { ThemeableImage, Image } from '../types'
 import { withBase } from 'vitepress'

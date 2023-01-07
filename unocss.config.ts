@@ -5,10 +5,9 @@ import {
   presetIcons,
   presetTypography,
   transformerDirectives,
-  transformerVariantGroup,
-  transformerCompileClass
+  transformerVariantGroup
 } from 'unocss'
-import lucide from '@iconify-json/lucide/icons.json'
+import lucide from '@iconify/json/json/lucide.json'
 
 export default defineConfig({
   rules: [],
@@ -16,7 +15,14 @@ export default defineConfig({
   presets: [
     presetUno(),
     presetAttributify(),
-    presetIcons(),
+    presetIcons({
+      extraProperties: {
+        display: 'inline-block',
+        width: '1.125em',
+        height: '1.125em',
+        'vertical-align': 'middle'
+      }
+    }),
     presetTypography({
       cssExtend: {
         h1: {
@@ -41,6 +47,6 @@ export default defineConfig({
       }
     })
   ],
-  transformers: [transformerDirectives(), transformerVariantGroup(), transformerCompileClass()],
+  transformers: [transformerDirectives(), transformerVariantGroup()],
   safelist: Object.keys(lucide.icons).map(key => 'i-lucide:' + key)
 })
