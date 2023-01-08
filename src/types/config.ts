@@ -1,4 +1,4 @@
-export interface Config {
+export interface ThemeConfig {
   /**
    * The logo file of the site.
    *
@@ -80,6 +80,11 @@ export interface Config {
    * The carbon ads options. Leave it undefined to disable the ads feature.
    */
   carbonAds?: CarbonAdsOptions
+
+  /**
+   * The posts.
+   */
+  posts?: Post[]
 }
 
 // nav -----------------------------------------------------------------------
@@ -244,7 +249,7 @@ export interface AlgoliaSearchOptions {
   apiKey: string
   indexName: string
   placeholder?: string
-  searchParameters?: any
+  searchParameters?: unknown
   disableUserPersonalization?: boolean
   initialQuery?: string
   buttonText?: string
@@ -255,4 +260,15 @@ export interface AlgoliaSearchOptions {
 export interface CarbonAdsOptions {
   code: string
   placement: string
+}
+
+export interface Post {
+  title: string
+  href: string
+  date: {
+    time: number
+    string: string
+  }
+  excerpt: string | undefined
+  data?: Record<string, unknown>
 }

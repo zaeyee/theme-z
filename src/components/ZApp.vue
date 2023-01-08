@@ -1,4 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const { page } = useData()
+
+console.log(page)
+</script>
 
 <template>
   <ZNavbar />

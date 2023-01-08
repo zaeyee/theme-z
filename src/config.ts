@@ -21,3 +21,5 @@ export default () => ({
     ]
   }
 })
+
+export * from './posts'

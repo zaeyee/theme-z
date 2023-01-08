@@ -4,7 +4,8 @@ const { frontmatter } = useData()
 
 <template>
   <main px-7 py-10>
-    <ZContentProjects v-if="frontmatter.projects" />
+    <ZContentPosts v-if="frontmatter.posts" />
+    <ZContentProjects v-else-if="frontmatter.projects" />
     <ZContentPost v-else />
   </main>
 </template>

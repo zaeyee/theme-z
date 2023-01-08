@@ -22,4 +22,6 @@ export default {
   }
 } as Theme
 
-export type { Config } from './types/config'
+export type { ThemeConfig } from './types'
+
+// export * from './posts'

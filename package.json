@@ -25,8 +25,10 @@
   },
   "devDependencies": {
     "@iconify/json": "^2.2.3",
+    "@types/node": "^18.11.18",
     "@zaeyee/eslint-config": "0.3.0",
     "eslint": "^8.31.0",
+    "gray-matter": "^4.0.3",
     "prettier": "^2.8.1",
     "typescript": "^4.9.4",
     "unocss": "^0.48.0",
