@@ -14,7 +14,7 @@ const { frontmatter: fm } = useData()
           :key="idx"
           :href="item.link"
           target="_blank"
-          flex="~ "
+          flex
           items-center
           p-4
           b-none

@@ -264,11 +264,8 @@ export interface CarbonAdsOptions {
 
 export interface Post {
   title: string
-  href: string
-  date: {
-    time: number
-    string: string
-  }
+  path: string
+  date: string | number
   excerpt: string | undefined
   data?: Record<string, unknown>
 }
