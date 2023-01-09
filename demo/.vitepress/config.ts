@@ -1,4 +1,6 @@
 import { defineConfigWithTheme } from 'vitepress'
+import path from 'path'
+
 import type { ThemeConfig } from '../../src/types'
 import baseConfig, { getPosts } from '../../src/config'
 
@@ -36,7 +38,7 @@ export default async () =>
           link: 'https://github.com/antfu'
         }
       ],
-      sidebar: []
-      // posts: await getPosts('../posts')
+      sidebar: [],
+      posts: await getPosts(path.join(__dirname, '../posts'))
     }
   })

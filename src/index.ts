@@ -23,5 +23,3 @@ export default {
 } as Theme
 
 export type { ThemeConfig } from './types'
-
-// export * from './posts'
