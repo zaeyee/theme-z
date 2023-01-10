@@ -1,10 +1,9 @@
 <script setup lang="ts">
-const isDark = useDark()
 const { page } = useData()
 </script>
 
 <template>
-  <article prose :class="{ 'prose-invert': isDark }">
+  <article class="ma prose prose-stone dark:prose-invert">
     <h1>{{ page.title }}</h1>
     <Content />
   </article>

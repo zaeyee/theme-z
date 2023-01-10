@@ -3,6 +3,7 @@ import {
   presetUno,
   presetAttributify,
   presetIcons,
+  presetWebFonts,
   presetTypography,
   transformerDirectives,
   transformerVariantGroup
@@ -23,9 +24,16 @@ export default defineConfig({
         'vertical-align': 'middle'
       }
     }),
+    presetWebFonts({
+      fonts: {
+        sans: 'Inter:400,600,800',
+        mono: 'DM Mono'
+      }
+    }),
     presetTypography({
       cssExtend: {
         h1: {
+          'font-weight': 800,
           'margin-bottom': '2rem'
         },
         p: {
@@ -33,7 +41,7 @@ export default defineConfig({
         },
         a: {
           'text-decoration': 'none',
-          'border-bottom': '1px solid rgba(125,125,125,.3)',
+          'border-bottom': '1px solid rgba(125, 125, 125, .3)',
           transition: 'border .3s ease-in-out'
         },
         'a:hover': {
@@ -42,6 +50,7 @@ export default defineConfig({
         hr: {
           width: '50px',
           margin: '2em auto',
+          'border-color': 'rgba(125, 125, 125, .3)',
           'border-bottom': 'none'
         }
       }

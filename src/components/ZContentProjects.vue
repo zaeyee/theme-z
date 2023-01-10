@@ -3,11 +3,11 @@ const { frontmatter: fm } = useData()
 </script>
 
 <template>
-  <div prose>
-    <h1 mb-0>Projects</h1>
-    <p mt-1 italic color-gray-500>{{ fm.description }}</p>
+  <div class="content">
+    <div text-3xl font-800 mb-0>Projects</div>
+    <p mt-1 italic c-gray-500>{{ fm.description }}</p>
     <div v-for="key in Object.keys(fm.projects)" :key="key">
-      <h4 mt-8>{{ key }}</h4>
+      <div mt-8 mb-3>{{ key }}</div>
       <div grid="~ cols-1 sm:cols-2 gap-3">
         <a
           v-for="(item, idx) in fm.projects[key]"
@@ -17,20 +17,20 @@ const { frontmatter: fm } = useData()
           flex
           items-center
           p-4
-          b-none
+          b="none hover:none"
           shadow
           rounded-lg
           transition-colors
           duration-300
-          hover="bg-gray-50"
+          hover="bg-gray-1 dark:bg-gray-900"
         >
-          <div text-3xl color-gray-500>
+          <div text-3xl c-gray-500>
             <i :class="item.icon"></i>
           </div>
           <div ml-4>
             <div>{{ item.name }}</div>
             <!-- eslint-disable-next-line vue/no-v-html -->
-            <div text-sm mt-0.5 color-gray-500 v-html="item.desc"></div>
+            <div text-sm mt-0.5 c-gray-500 v-html="item.desc"></div>
           </div>
         </a>
       </div>

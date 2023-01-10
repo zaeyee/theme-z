@@ -5,7 +5,7 @@ const toggleDark = useToggle(isDark)
 </script>
 
 <template>
-  <header flex justify-between items-center px-5 py-3>
+  <header flex justify-between items-center p-4>
     <a href="/" flex-none w-10 h-10>
       <ZImage :image="theme.logo" />
     </a>
@@ -30,6 +30,6 @@ const toggleDark = useToggle(isDark)
 
 <style scoped>
 .nav-item {
-  @apply px-2.5 color-black/50 hover:color-black cursor-pointer transition-colors duration-300;
+  @apply px-2.5 c-black/50 hover:c-black cursor-pointer transition-colors duration-300;
 }
 </style>
