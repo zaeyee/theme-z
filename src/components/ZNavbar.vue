@@ -15,12 +15,12 @@ const toggleDark = useToggle(isDark)
           {{ item.text }}
         </a>
       </nav>
-      <nav b-l>
+      <nav>
         <a v-for="(item, index) in theme.socialLinks" :key="index" :href="item.link" class="nav-item">
           <i :class="item.icon"></i>
         </a>
       </nav>
-      <span b-l class="nav-item" @click="toggleDark()">
+      <span class="nav-item" @click="toggleDark()">
         <i v-show="!isDark" i-lucide:sun></i>
         <i v-show="isDark" i-lucide:moon></i>
       </span>
@@ -30,6 +30,6 @@ const toggleDark = useToggle(isDark)
 
 <style scoped>
 .nav-item {
-  @apply px-2.5 c-black/50 hover:c-black cursor-pointer transition-colors duration-300;
+  @apply px-2.5 op-70 cursor-pointer transition-opacity duration-300 hover:op-100;
 }
 </style>

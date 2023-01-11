@@ -1,17 +1,17 @@
 :root {
-  --c-bg: #fff;
-  --c-text: #555;
-}
-
-html {
-  @apply bg-$c-bg font-sans;
+  --c-bg: rgb(255, 255, 255);
+  --c-text: rgba(55, 65, 81);
 }
 
 html.dark {
-  --c-bg: #050505;
-  --c-text: #bbb;
+  --c-bg: rgb(5, 5, 5);
+  --c-text: rgba(229, 231, 235);
+}
+
+body {
+  @apply font-sans bg-$c-bg c-$c-text transition-colors duration-500;
 }
 
 .content {
-  @apply max-w-65ch ma c-$c-text;
+  @apply max-w-65ch ma;
 }

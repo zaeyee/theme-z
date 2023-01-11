@@ -22,7 +22,16 @@ const isSameYear = (a: MaybeDate, b: MaybeDate) => a && b && getYear(a) === getY
       <div v-if="!isSameYear(post.date, posts[idx - 1]?.date)" relative h-16 pointer-events-none>
         <span text-32 op10 absolute left--2rem top--1rem font-bold>{{ getYear(post.date) }}</span>
       </div>
-      <a block p-4 b-none rounded-lg transition-colors duration-300 hover="bg-gray-50" :href="post.path">
+      <a
+        block
+        p-4
+        b-none
+        rounded-lg
+        transition-colors
+        duration-300
+        hover="bg-gray-100 dark:bg-gray-900"
+        :href="post.path"
+      >
         <div>{{ post.title }}</div>
         <div text-sm c-gray-500>{{ formatDate(post.date) }}</div>
       </a>

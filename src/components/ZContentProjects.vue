@@ -17,12 +17,13 @@ const { frontmatter: fm } = useData()
           flex
           items-center
           p-4
-          b="none hover:none"
+          b-none
           shadow
           rounded-lg
           transition-colors
           duration-300
-          hover="bg-gray-1 dark:bg-gray-900"
+          dark="bg-gray-900/30"
+          hover="bg-gray-100 dark:bg-gray-900"
         >
           <div text-3xl c-gray-500>
             <i :class="item.icon"></i>
