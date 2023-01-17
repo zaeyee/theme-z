@@ -35,7 +35,8 @@ watch(route, () => {
         <i v-show="isDark" i-lucide:moon></i>
       </span>
       <span class="nav-item" md:hidden @click="isOpen = !isOpen">
-        <i i-ri:menu-4-line></i>
+        <i v-show="!isOpen" i-ri:menu-3-fill></i>
+        <i v-show="isOpen" i-mingcute:close-line></i>
       </span>
     </div>
   </header>
